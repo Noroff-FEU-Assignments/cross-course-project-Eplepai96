@@ -12,31 +12,41 @@
       <script src="https://kit.fontawesome.com/da4fbc451d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-      <nav>
-        <ul class="header-items">
-          <li class="item-1"><a href="index.html"><img src="images/RainyDays_Logo.jpg" alt="company logo" class="logo"></a></li>
-          <li class="item-2"><a href="products.html">Women</a></li>
-          <li class="item-3"><a href="products.html">Men</a></li>
-          <li class="item-4"><a href="products.html">Unisex</a></li>
-          <li><span class="material-icons" id="Shopping-bag"><a href="shopping-bag">
-            shopping_bag</a>
-            </span></li>
-        </ul>
-      </nav>
+    <header>      
+        <nav>
+          <ul class="header-items">
+            <li class="item-0"><label for="hamburger-menu"><span class="material-icons">
+              menu
+              </span></label></li>
+              <input type="checkbox" id="hamburger-menu">
+            <li class="item-1"><a href="index.html"><img src="images/RainyDays_Logo.jpg" alt="company logo" class="logo"></a></li>
+            <li class="item-2"><a href="products.html">Shop</a></li>
+            <li class="item-3"><a href="about.html">About Us</a></li>
+            <li class="item-4"><a href="contact.html">Help</a></li>
+            <li class="item-5"><input type="search" id="searchbar"></li>
+            <li class="item-6"><label for="searchicon"><span class="material-icons">
+              search
+              </span></label>
+              </li>
+              <input type="checkbox" id="searchicon">
+            <li><span class="material-icons" id="Shopping-bag"><a href="checkout.html">
+              shopping_bag</a>
+              </span></li>
+          </ul>
+        </nav>
     </header>
   <main>
     <div class="top">
-      <h1> Rainy days</h1>
+      <h1 id="h1-index"> Rainy days</h1>
       <p class="top-description">Durable jackets for varying weather</p>
-      <button class="cta-1" id="button-1">SHOP NOW</button>
+      <a href="products.html" class="button-1">Shop now</a>
     </div>
     <section class="popular-products">
-      <h2>Popular Products</h2>
+      <h2 id="h2-index">Popular Products</h2>
       <div class="flex-wrap">
         <div class="container">
-            <div class="image-container">
-              <h5>Name of jacket</h5>
+            <div class="image-container" id="image-container-1">
+              <a href="products.html"><h5>Name of jacket</h5>
               <ul>
                 <li class="cta-2">
                   <button>Hiking</button>
@@ -44,6 +54,7 @@
                   <button>Kayaking</button>
                 </li>
               </ul>
+            </a>
             </div>
             <div class="color-selection">
               <ul>
@@ -58,7 +69,7 @@
           <p class="price">Price</p>
         </div>
         <div class="container">
-          <div class="image-container">
+          <div class="image-container" id="image-container-2">
             <h5>Name of jacket</h5>
             <ul>
               <li class="cta-2">
@@ -81,7 +92,7 @@
         <p class="price">Price</p>
       </div>
       <div class="container">
-        <div class="image-container">
+        <div class="image-container" id="image-container-3">
           <h5>Name of jacket</h5>
           <ul>
             <li class="cta-2">
@@ -104,7 +115,7 @@
       <p class="price">Price</p>
     </div>
     <div class="container">
-      <div class="image-container">
+      <div class="image-container" id="image-container-4">
         <h5>Name of jacket</h5>
         <ul>
           <li class="cta-2">
@@ -127,7 +138,7 @@
     <p class="price">Price</p>
   </div>
   <div class="container">
-    <div class="image-container">
+    <div class="image-container" id="image-container-5">
       <h5>Name of jacket</h5>
       <ul>
         <li class="cta-2">
@@ -137,7 +148,7 @@
         </li>
       </ul>
     </div>
-    <div class="color-selection">
+    <div  id="color-selection">
       <ul>
         <li>
           <div class="circle-1"></div>
@@ -150,7 +161,7 @@
   <p class="price">Price</p>
 </div>
 <div class="container">
-  <div class="image-container">
+  <div class="image-container" id="image-container-6">
     <h5>Name of jacket</h5>
     <ul>
       <li class="cta-2">
@@ -177,11 +188,11 @@
     </section>
     <section>
       <div>
-        <h2 class="products-sale">Products on Sale</h2>
+        <h2 id="h2-index" class="products-sale">Products on Sale</h2>
         <section class="product-list-container">
         <div class="flex-wrap">
           <div class="container">
-              <div class="image-container">
+              <div class="image-container" id="image-container-1">
                 <h5>Name of jacket</h5>
                 <ul>
                   <li class="cta-2">
@@ -204,7 +215,7 @@
             <p class="price">Price</p>
           </div>
           <div class="container">
-            <div class="image-container">
+            <div class="image-container" id="image-container-2">
               <h5>Name of jacket</h5>
               <ul>
                 <li class="cta-2">
@@ -227,7 +238,7 @@
           <p class="price">Price</p>
         </div>
         <div class="container">
-          <div class="image-container">
+          <div class="image-container" id="image-container-3">
             <h5>Name of jacket</h5>
             <ul>
               <li class="cta-2">
@@ -250,7 +261,7 @@
         <p class="price">Price</p>
       </div>
       <div class="container">
-        <div class="image-container">
+        <div class="image-container" id="image-container-4">
           <h5>Name of jacket</h5>
           <ul>
             <li class="cta-2">
@@ -273,7 +284,7 @@
       <p class="price">Price</p>
     </div>
     <div class="container">
-      <div class="image-container">
+      <div class="image-container" id="image-container-5">
         <h5>Name of jacket</h5>
         <ul>
           <li class="cta-2">
@@ -296,7 +307,7 @@
     <p class="price">Price</p>
   </div>
   <div class="container">
-    <div class="image-container">
+    <div class="image-container" id="image-container-6">
       <h5>Name of jacket</h5>
       <ul>
         <li class="cta-2">
@@ -324,19 +335,19 @@
     <section class="activities">
       <h2> Jacket perfect for your outdoor activities</h2>
       <div class="hiking">
-        <h3>Hiking</h3>
+        <h3 class="h3-index">Hiking</h3>
         <p class="activity-description">Our customers love hiking. Whether you're spending a weekend in the mountains, or just going for a walk, these jackets are for you</p>
-        <button class="cta-1">SHOP NOW</button>
+        <a href="products.html" class="button-1">Shop now</a>
       </div>
       <div class="kayaking">
-        <h3>Kayaking</h3>
+        <h3 h3-index>Kayaking</h3>
         <p class="activity-description">Stay dry with these all waterproof jackets.</p>
-        <button class="cta-1">SHOP NOW</button>
+        <a href="products.html" class="button-1">Shop now</a>
       </div>
       <div class="skiing">
-        <h3>Skiing</h3>
+        <h3 h3-index>Skiing</h3>
         <p class="activity-description">We know the importance of keeping warm in cold environments. Prepare for your winter actibities with these jackets.</p>
-        <button class="cta-1">SHOP NOW</button>
+        <a href="products.html" class="button-1">Shop now</a>
       </div>
     </section>
     <section class="activities-phone">
@@ -349,7 +360,7 @@
           <div class="hiking-description">
             <h3>Hiking</h3>
           <p class="activity-description">Our customers love hiking. Whether you're spending a weekend in the mountains, or just going for a walk, these jackets are for you</p>
-          <button class="cta-1">SHOP NOW</button>
+          <a href="products.html" class="button-1">Shop&nbsp;now</a>
         </div>
       </div>
         <div class="kayaking">
@@ -361,7 +372,7 @@
           <div class="kayaking-description">
             <h3>Kayaking</h3>
           <p class="activity-description">Stay dry with these all waterproof jackets.</p>
-          <button class="cta-1">SHOP NOW</button>
+          <a href="products.html" class="button-1">Shop&nbsp;now</a>
         </div>
       </div>
       <div class="skiing">
@@ -373,7 +384,7 @@
         <div class="skiing-description">
           <h3>Skiing</h3>
         <p class="activity-description">We know the importance of keeping warm in cold environments. Prepare for your winter actibities with these jackets.</p>
-        <button class="cta-1">SHOP NOW</button>
+        <a href="products.html" class="button-1">Shop&nbsp;now</a>
       </div>
       </div>
     </section>
@@ -381,11 +392,11 @@
   <footer>
     <div class="contact">
       <h4>Costumer service</h4>
-      <a href="contact">Contact</a>
+      <a href="contact.html">Contact</a>
     </div>
     <div class="about">
       <h4>About</h4>
-      <a href="about">About us</a>
+      <a href="about.html">About us</a>
     </div>
     <div class="follow-us">
       <h4>Follow us</h4>

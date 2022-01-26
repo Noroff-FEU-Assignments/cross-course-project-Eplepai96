@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+      <script src="https://kit.fontawesome.com/da4fbc451d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul class="header-items">
+            <li class="item-0"><span class="material-icons">
+              menu
+              </span></li>
+            <li class="item-1"><a href="index.html"><img src="images/RainyDays_Logo.jpg" alt="company logo" class="logo"></a></li>
+            <li class="item-2"><a href="products.html">Shop</a></li>
+            <li class="item-3"><a href="about.html">About Us</a></li>
+            <li class="item-4"><a href="contact.html">Help</a></li>
+            <li class="item-5"><input type="search" class="searchbar"></li>
+            <li class="item-6"><span class="material-icons">
+              search
+              </span>
+              </li>
+            <li><span class="material-icons" id="Shopping-bag"><a href="checkout.html">
+              shopping_bag</a>
+              </span></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+        <h1>All jackets</h1>
+        <div>
+            <select name="gender" id="gender-select" class="dropdown">
+                <option value="0">Gender</option>
+                <option value="1">Men</option>
+                <option value="2">Women</option>
+                <option value="3">Unisex</option>
+            </select>
+        </div>
+        <div id="products-container"> 
+            <div>
+                <select name="sort by" id="sort-select" class="dropdown">
+                    <option value="0">Sort by</option>
+                    <option value="1">Most popular</option>
+                    <option value="2">Price low-high</option>
+                    <option value="3">Price low-high</option>
+                    <option value="4">Sale</option>
+                    <option value="5">Newly added</option>
+                </select>
+            </div>
+            <div>
+                <select name="color selection" id="color-select" class="dropdown">
+                    <option value="0">Select color</option>
+                    <option value="1">Grey</option>
+                    <option value="2">Blue</option>
+                    <option value="3">Green</option>
+                    <option value="4">White</option>
+                    <option value="5">Purple</option>
+                    <option value="6">Black</option>
+                </select>
+            </div>
+            <div>
+                <select name="activity selection" id="activity-select" class="dropdown">
+                    <option value="0">Select activity</option>
+                    <option value="1">Hiking</option>
+                    <option value="2">Skiing</option>
+                    <option value="3">Kayaking</option>
+                    <option value="4">Camping</option>
+                    <option value="5">Running</option>
+                    <option value="6">Cycling</option>
+                    <option value="7">Fishing</option>
+                </select>
+            </div>
+        </div>
+        <div class="flex-wrap">
+            <div class="container">
+                <div class="image-container">
+                  <h5>Name of jacket</h5>
+                  <ul>
+                    <li class="cta-2">
+                      <button>Hiking</button>
+                      <button>Skiing</button>
+                      <button>Kayaking</button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="color-selection">
+                  <ul>
+                    <li>
+                      <div class="circle-1"></div>
+                      <div class="circle-2"></div>
+                      <div class="circle-3"></div>
+                      <div class="circle-4"></div>
+                    </li>
+                  </ul>
+                </div>
+              <p class="price">Price</p>
+            </div>
+            <div class="container">
+              <div class="image-container">
+                <h5>Name of jacket</h5>
+                <ul>
+                  <li class="cta-2">
+                    <button>Hiking</button>
+                    <button>Skiing</button>
+                    <button>Kayaking</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="color-selection">
+                <ul>
+                  <li>
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                    <div class="circle-3"></div>
+                    <div class="circle-4"></div>
+                  </li>
+                </ul>
+              </div>
+            <p class="price">Price</p>
+          </div>
+          <div class="container">
+            <div class="image-container">
+              <h5>Name of jacket</h5>
+              <ul>
+                <li class="cta-2">
+                  <button>Hiking</button>
+                  <button>Skiing</button>
+                  <button>Kayaking</button>
+                </li>
+              </ul>
+            </div>
+            <div class="color-selection">
+              <ul>
+                <li>
+                  <div class="circle-1"></div>
+                  <div class="circle-2"></div>
+                  <div class="circle-3"></div>
+                  <div class="circle-4"></div>
+                </li>
+              </ul>
+            </div>
+          <p class="price">Price</p>
+        </div>
+        <div class="container">
+          <div class="image-container">
+            <h5>Name of jacket</h5>
+            <ul>
+              <li class="cta-2">
+                <button>Hiking</button>
+                <button>Skiing</button>
+                <button>Kayaking</button>
+              </li>
+            </ul>
+          </div>
+          <div class="color-selection">
+            <ul>
+              <li>
+                <div class="circle-1"></div>
+                <div class="circle-2"></div>
+                <div class="circle-3"></div>
+                <div class="circle-4"></div>
+              </li>
+            </ul>
+          </div>
+        <p class="price">Price</p>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <h5>Name of jacket</h5>
+          <ul>
+            <li class="cta-2">
+              <button>Hiking</button>
+              <button>Skiing</button>
+              <button>Kayaking</button>
+            </li>
+          </ul>
+        </div>
+        <div class="color-selection">
+          <ul>
+            <li>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+              <div class="circle-4"></div>
+            </li>
+          </ul>
+        </div>
+      <p class="price">Price</p>
+    </div>
+    <div class="container">
+      <div class="image-container">
+        <h5>Name of jacket</h5>
+        <ul>
+          <li class="cta-2">
+            <button>Hiking</button>
+            <button>Skiing</button>
+            <button>Kayaking</button>
+          </li>
+        </ul>
+      </div>
+      <div class="color-selection">
+        <ul>
+          <li>
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+            <div class="circle-4"></div>
+          </li>
+        </ul>
+      </div>
+      <p class="price">Price</p>
+    </div>
+    <div class="container">
+        <div class="image-container">
+          <h5>Name of jacket</h5>
+          <ul>
+            <li class="cta-2">
+              <button>Hiking</button>
+              <button>Skiing</button>
+              <button>Kayaking</button>
+            </li>
+          </ul>
+        </div>
+        <div class="color-selection">
+          <ul>
+            <li>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+              <div class="circle-4"></div>
+            </li>
+          </ul>
+        </div>
+        <p class="price">Price</p>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <h5>Name of jacket</h5>
+          <ul>
+            <li class="cta-2">
+              <button>Hiking</button>
+              <button>Skiing</button>
+              <button>Kayaking</button>
+            </li>
+          </ul>
+        </div>
+        <div class="color-selection">
+          <ul>
+            <li>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+              <div class="circle-4"></div>
+            </li>
+          </ul>
+        </div>
+        <p class="price">Price</p>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <h5>Name of jacket</h5>
+          <ul>
+            <li class="cta-2">
+              <button>Hiking</button>
+              <button>Skiing</button>
+              <button>Kayaking</button>
+            </li>
+          </ul>
+        </div>
+        <div class="color-selection">
+          <ul>
+            <li>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+              <div class="circle-4"></div>
+            </li>
+          </ul>
+        </div>
+        <p class="price">Price</p>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <h5>Name of jacket</h5>
+          <ul>
+            <li class="cta-2">
+              <button>Hiking</button>
+              <button>Skiing</button>
+              <button>Kayaking</button>
+            </li>
+          </ul>
+        </div>
+        <div class="color-selection">
+          <ul>
+            <li>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+              <div class="circle-4"></div>
+            </li>
+          </ul>
+        </div>
+        <p class="price">Price</p>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <h5>Name of jacket</h5>
+          <ul>
+            <li class="cta-2">
+              <button>Hiking</button>
+              <button>Skiing</button>
+              <button>Kayaking</button>
+            </li>
+          </ul>
+        </div>
+        <div class="color-selection">
+          <ul>
+            <li>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+              <div class="circle-4"></div>
+            </li>
+          </ul>
+        </div>
+        <p class="price">Price</p>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <h5>Name of jacket</h5>
+          <ul>
+            <li class="cta-2">
+              <button>Hiking</button>
+              <button>Skiing</button>
+              <button>Kayaking</button>
+            </li>
+          </ul>
+        </div>
+        <div class="color-selection">
+          <ul>
+            <li>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+              <div class="circle-4"></div>
+            </li>
+          </ul>
+        </div>
+        <p class="price">Price</p>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <h5>Name of jacket</h5>
+          <ul>
+            <li class="cta-2">
+              <button>Hiking</button>
+              <button>Skiing</button>
+              <button>Kayaking</button>
+            </li>
+          </ul>
+        </div>
+        <div class="color-selection">
+          <ul>
+            <li>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+              <div class="circle-4"></div>
+            </li>
+          </ul>
+        </div>
+        <p class="price">Price</p>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <h5>Name of jacket</h5>
+          <ul>
+            <li class="cta-2">
+              <button>Hiking</button>
+              <button>Skiing</button>
+              <button>Kayaking</button>
+            </li>
+          </ul>
+        </div>
+        <div class="color-selection">
+          <ul>
+            <li>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+              <div class="circle-4"></div>
+            </li>
+          </ul>
+        </div>
+        <p class="price">Price</p>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <h5>Name of jacket</h5>
+          <ul>
+            <li class="cta-2">
+              <button>Hiking</button>
+              <button>Skiing</button>
+              <button>Kayaking</button>
+            </li>
+          </ul>
+        </div>
+        <div class="color-selection">
+          <ul>
+            <li>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+              <div class="circle-4"></div>
+            </li>
+          </ul>
+        </div>
+        <p class="price">Price</p>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <h5>Name of jacket</h5>
+          <ul>
+            <li class="cta-2">
+              <button>Hiking</button>
+              <button>Skiing</button>
+              <button>Kayaking</button>
+            </li>
+          </ul>
+        </div>
+        <div class="color-selection">
+          <ul>
+            <li>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+              <div class="circle-4"></div>
+            </li>
+          </ul>
+        </div>
+        <p class="price">Price</p>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <h5>Name of jacket</h5>
+          <ul>
+            <li class="cta-2">
+              <button>Hiking</button>
+              <button>Skiing</button>
+              <button>Kayaking</button>
+            </li>
+          </ul>
+        </div>
+        <div class="color-selection">
+          <ul>
+            <li>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+              <div class="circle-4"></div>
+            </li>
+          </ul>
+        </div>
+        <p class="price">Price</p>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <h5>Name of jacket</h5>
+          <ul>
+            <li class="cta-2">
+              <button>Hiking</button>
+              <button>Skiing</button>
+              <button>Kayaking</button>
+            </li>
+          </ul>
+        </div>
+        <div class="color-selection">
+          <ul>
+            <li>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+              <div class="circle-4"></div>
+            </li>
+          </ul>
+        </div>
+        <p class="price">Price</p>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <h5>Name of jacket</h5>
+          <ul>
+            <li class="cta-2">
+              <button>Hiking</button>
+              <button>Skiing</button>
+              <button>Kayaking</button>
+            </li>
+          </ul>
+        </div>
+        <div class="color-selection">
+          <ul>
+            <li>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+              <div class="circle-4"></div>
+            </li>
+          </ul>
+        </div>
+        <p class="price">Price</p>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <h5>Name of jacket</h5>
+          <ul>
+            <li class="cta-2">
+              <button>Hiking</button>
+              <button>Skiing</button>
+              <button>Kayaking</button>
+            </li>
+          </ul>
+        </div>
+        <div class="color-selection">
+          <ul>
+            <li>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+              <div class="circle-4"></div>
+            </li>
+          </ul>
+        </div>
+        <p class="price">Price</p>
+      </div>
+    </div>
+    </main>
+    <footer>
+        <div class="contact">
+          <h4>Costumer service</h4>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="about">
+          <h4>About</h4>
+          <a href="about.html">About us</a>
+        </div>
+        <div class="follow-us">
+          <h4>Follow us</h4>
+            <ul class="follow-items">
+              <li><a href="google"><i class="fab fa-google"></i></a></li>
+              <li><a href="instagram"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="facebook"><i class="fab fa-facebook"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+</body>
+</html>
