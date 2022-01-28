@@ -26,10 +26,21 @@ p{
     border-radius: 15px;
     border: none;
     background-color: var(--color-blue);
-    margin: 20px;
     max-width: 150px;
     color: var(--color-white);
 }
+
+.button-1:hover{
+    background-color: #7A777D;
+}
+
+.button-3{
+    background-color: rgb(61, 104, 33);
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: white;
+}
+
 
 a{
     text-decoration: none;
@@ -52,8 +63,17 @@ li{
     
 }
 
-.checkbox{
+.checkbox, .textbox{
     border-radius: 6px;
+    border-width: thin;
+}
+
+.textbox{
+    padding-top: 6px;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 /* Headings */
@@ -130,7 +150,7 @@ header{
 /* Homepage */
 
 /* Top section*/
-.top h1{
+.top h1, .top-description{
     padding: 60px 0px 0px 60px;
 }
 
@@ -143,11 +163,12 @@ header{
 
 .top-description{
     color: var(--color-white);
-    padding: 20px;
-    width: 400px;
+    max-width: 400px;
 }
 
-
+#button-1-home{
+    line-height: 200px;
+}
 
 /* Products section*/
 
@@ -159,6 +180,10 @@ header{
     margin: 10px;
     overflow: hidden;
     display: inline-block;
+}
+
+.image-container h5{
+    background-color: rgb(255, 255, 255, 0.5);
 }
 
 .image-container{
@@ -250,6 +275,10 @@ li button{
  }
 
 /* Activities section */
+
+.index-main .button-1{
+    margin: 40px;
+}
 
 .activities{
     display: block;
@@ -421,11 +450,6 @@ footer a{
     border-radius: 6px;
 }
 
-#contact-button{
-    height: 35px;
-    width: 70px;
-}
-
 #company-info, #checkout-h1{
     padding: 100px;
     text-align: center;
@@ -466,13 +490,6 @@ footer a{
     margin-bottom: 200px;
 }
 
-
-
-#checkout-container a{
-    color: #000000;
-    font-weight: bold;
-}
-
 #checkout-container button{
     padding: 10px 20px;
     background-color: #5a99c7;
@@ -489,6 +506,11 @@ footer a{
 #guest-container{
     max-height: 200px;
     width: 400px;
+}
+
+#back-arrow{
+    font-size: 10px;
+    margin: 20px;
 }
 
 /* Checkout-2 */
@@ -537,15 +559,36 @@ input[type='checkbox'] {
     float: right;
 }
 
+#delivery-icon{
+    color: #7A777D;
+    font-size: 40px;
+    transform: none;
+}
+
 /* Checkout-3 */
-.chackout-h1{
+.checkout-h1{
     text-align: center;
+}
+
+#checkmark{
+    width: 100%;
+    text-align: center;
+    font-size: var(--font-size-medium);
+    padding: 22px 0px;
+}
+
+.checkout-h1 em, #checkmark{
+    color: rgb(61, 104, 33);
 }
 
 #product-summary{
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
+}
+
+.checkbox-3{
+    margin-top: -45px;
+    padding-left: 40px;
 }
 
 /* Product specific */
@@ -605,7 +648,8 @@ input[type='checkbox'] {
 /* Products page */
 #products-container{
     display: flex;
-    
+    flex-wrap: wrap;
+    padding: 40px 0px;
 }
 
 
@@ -719,6 +763,10 @@ input[type='checkbox'] {
         
     }
 
+    #contact-form{
+        padding: 100px;
+    }
+
     
 
     /* Footer */
@@ -795,8 +843,10 @@ input[type='checkbox'] {
     }
 
     .activity-description{
-        max-width: 500px;
+        max-width: 300px;
         padding: 50px;
+        background-color: rgb(255, 255, 255, 0.6);
+        margin-left: 40px;
     }
 
     .item-0, .item-5{

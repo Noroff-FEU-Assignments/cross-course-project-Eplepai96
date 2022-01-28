@@ -12,32 +12,35 @@
       <script src="https://kit.fontawesome.com/da4fbc451d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
-          <ul class="header-items">
-            <li class="item-0"><span class="material-icons">
-              menu
-              </span></li>
-            <li class="item-1"><a href="index.html"><img src="images/RainyDays_Logo.jpg" alt="company logo" class="logo"></a></li>
-            <li class="item-2"><a href="products.html">Shop</a></li>
-            <li class="item-3"><a href="about.html">About Us</a></li>
-            <li class="item-4"><a href="contact.html">Help</a></li>
-            <li class="item-5"><input type="search" class="searchbar"></li>
-            <li class="item-6"><span class="material-icons">
-              search
-              </span>
-              </li>
-            <li><span class="material-icons" id="Shopping-bag"><a href="checkout.html">
-              shopping_bag</a>
-              </span></li>
-          </ul>
-        </nav>
-      </header>
+  <header>      
+    <nav>
+      <ul class="header-items">
+        <li class="item-0"><label for="hamburger-menu"><span class="material-icons">
+          menu
+          </span></label></li>
+          <input type="checkbox" id="hamburger-menu">
+        <li class="item-1"><a href="index.html"><img src="images/RainyDays_Logo.jpg" alt="company logo" class="logo"></a></li>
+        <li class="item-2"><a href="products.html">Shop</a></li>
+        <li class="item-3"><a href="about.html">About Us</a></li>
+        <li class="item-4"><a href="contact.html">Help</a></li>
+        <li class="item-5"><input type="search" id="searchbar"></li>
+        <li class="item-6"><label for="searchicon"><span class="material-icons">
+          search
+          </span></label>
+          </li>
+          <input type="checkbox" id="searchicon">
+        <li><span class="material-icons" id="Shopping-bag"><a href="checkout.html">
+          shopping_bag</a>
+          </span></li>
+      </ul>
+    </nav>
+</header>
     <main id="contact-background">
         <h1 id="contact-h1">Contact us</h1>
             <section id="contact-info">           
                 <div id="contact-form">
                     <h2>Contact form</h2> 
+                    <form action="sent.hmtl" method="post">
                         <div>
                             <p>Your name</p>
                             <input type="name" class="text-contact">
@@ -49,8 +52,8 @@
                         <div>
                             <p>Your message</p>
                             <textarea name="text-area" id="textarea-contact" cols="30" rows="10"></textarea>
-                            <button
-                            id="contact-button">Send</button>
+                            <a class="button-3" href="sent.hmtl">Send</a>
+                          </form>
                         </div>
                 </div>
                 <div  id="company-info">
@@ -58,19 +61,19 @@
                         <span class="material-icons-outlined">
                             phone_iphone
                             </span>
-                        <p>Call us: <a href="phone-number">9546080239850</a></p>
+                        <p>Call us: <a href="phone-number" class="bold">9546080239850</a></p>
                     </div>
                     <div>
                         <span class="material-icons-outlined">
                             email
                             </span>
-                        <p>Email us: <a href="email-address">support@rainydays.com</a></p>
+                        <p>Email us: <a href="email-address" class="bold">support@rainydays.com</a></p>
                     </div>
                     <div>
                         <span class="material-icons-outlined">
                             support_agent
                             </span>
-                        <p>Click <a href="agent'chat">here</a> to chat with an agent</p>
+                        <p>Click <a href="agent'chat" class="bold">here</a> to chat with an agent</p>
                     </div>
                 </div>
             </section>

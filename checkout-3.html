@@ -12,27 +12,29 @@
       <script src="https://kit.fontawesome.com/da4fbc451d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header>      
         <nav>
           <ul class="header-items">
-            <li class="item-0"><span class="material-icons">
+            <li class="item-0"><label for="hamburger-menu"><span class="material-icons">
               menu
-              </span></li>
+              </span></label></li>
+              <input type="checkbox" id="hamburger-menu">
             <li class="item-1"><a href="index.html"><img src="images/RainyDays_Logo.jpg" alt="company logo" class="logo"></a></li>
             <li class="item-2"><a href="products.html">Shop</a></li>
             <li class="item-3"><a href="about.html">About Us</a></li>
             <li class="item-4"><a href="contact.html">Help</a></li>
-            <li class="item-5"><input type="search" class="searchbar"></li>
-            <li class="item-6"><span class="material-icons">
+            <li class="item-5"><input type="search" id="searchbar"></li>
+            <li class="item-6"><label for="searchicon"><span class="material-icons">
               search
-              </span>
+              </span></label>
               </li>
+              <input type="checkbox" id="searchicon">
             <li><span class="material-icons" id="Shopping-bag"><a href="checkout.html">
               shopping_bag</a>
               </span></li>
           </ul>
         </nav>
-      </header>
+    </header>
     <main>
         <div class="breadcrumbs">
             <ul>
@@ -41,7 +43,12 @@
               <li><a href="checkout-3.html" class="active">Receipt</a></li>
             </ul>
           </div>
-    <h1 class="checkout-h1">Thank you! Your order has been received</h1>
+          <div>
+            <span class="material-icons" id="checkmark">
+                check_circle
+                </span>
+          </div>
+    <h1 class="checkout-h1"><em>Thank you!</em> Your order has been received</h1>
         <div  id="checkout-2">
             <section class="checkout-section" id="information">
                 <div class="checkout-background">
@@ -53,20 +60,20 @@
             <section class="checkout-section" id="payment">
                 <div class="checkout-background">
                     <p>Not done yet?</p>
-                    <a href="checkout-3.html" class="button-1">Continue shopping</a>
+                    <a href="checkout-3.html" class="button-1">Back to shop</a>
                 </div>
                 
             </section>
             <section class="checkout-section" id="delivery">
                 <h2>Sign up to our newsletter for 15% off on your next order</h2>
-                <div  class="checkout-background">    
+                <div class="checkout-background">    
                     <div>
                        <p>Enter email</p>
-                       <input type="text">
+                       <input type="text" class="textbox">
                        <p>Get information about new products</p>
-                       <input type="checkbox">
+                       <input type="checkbox" class="checkbox-3">
                        <p>Get information about sales</p>
-                       <input type="checkbox">
+                       <input type="checkbox" class="checkbox-3">
                     </div>
                     <a href="checkout-3.html" class="button-1">Get updates</a>
                 </div>

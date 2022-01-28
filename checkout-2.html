@@ -12,27 +12,29 @@
       <script src="https://kit.fontawesome.com/da4fbc451d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header>      
         <nav>
           <ul class="header-items">
-            <li class="item-0"><span class="material-icons">
+            <li class="item-0"><label for="hamburger-menu"><span class="material-icons">
               menu
-              </span></li>
+              </span></label></li>
+              <input type="checkbox" id="hamburger-menu">
             <li class="item-1"><a href="index.html"><img src="images/RainyDays_Logo.jpg" alt="company logo" class="logo"></a></li>
             <li class="item-2"><a href="products.html">Shop</a></li>
             <li class="item-3"><a href="about.html">About Us</a></li>
             <li class="item-4"><a href="contact.html">Help</a></li>
-            <li class="item-5"><input type="search" class="searchbar"></li>
-            <li class="item-6"><span class="material-icons">
+            <li class="item-5"><input type="search" id="searchbar"></li>
+            <li class="item-6"><label for="searchicon"><span class="material-icons">
               search
-              </span>
+              </span></label>
               </li>
+              <input type="checkbox" id="searchicon">
             <li><span class="material-icons" id="Shopping-bag"><a href="checkout.html">
               shopping_bag</a>
               </span></li>
           </ul>
         </nav>
-      </header>
+    </header>
     <main>
         <div class="breadcrumbs">
             <ul>
@@ -41,7 +43,7 @@
               <li><a href="checkout-3.html">Receipt</a></li>
             </ul>
           </div>
-    <h2>Information and delivery address</h2>
+    <h2 class="checkout-h1">Information and delivery address</h2>
         <div  id="checkout-2">
             <section class="checkout-section" id="information">
                 <div class="checkout-background">
@@ -67,16 +69,25 @@
                 <h2>Deliver with</h2>
                 <div>    
                     <div class="checkout-background">
+                        <span class="material-icons" id="delivery-icon">
+                            place
+                            </span>
                         <p>Standard (price)</p>
                         <p>Delivered to mail box (time) <span><input type="checkbox" class="checkbox-2"></span></p>
                     </div>
                     <div class="checkout-background">
-                        <p>Standard (price)</p>
-                        <p>Delivered to mail box (time) <span><input type="checkbox" class="checkbox-2"></span></p>
+                        <span class="material-icons" id="delivery-icon">
+                            place
+                            </span>
+                        <p>Pickup point (price)</p>
+                        <p>Pick it up yourself (time) <span><input type="checkbox" class="checkbox-2"></span></p>
                     </div>
                     <div class="checkout-background">
-                        <p>Standard (price)</p>
-                        <p>Delivered to mail box (time) <span><input type="checkbox" class="checkbox-2"></span></p>
+                        <span class="material-icons" id="delivery-icon">
+                            home
+                            </span>
+                        <p>Home delivery (price)</p>
+                        <p>Delivered to your doorstep (time) <span><input type="checkbox" class="checkbox-2"></span></p>
                     </div>
                 </div>
             </section>
