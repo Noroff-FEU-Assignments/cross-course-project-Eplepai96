@@ -30,7 +30,7 @@ p{
     color: var(--color-white);
 }
 
-.button-1:hover{
+.button-1:hover, .button-3:hover{
     background-color: #7A777D;
 }
 
@@ -164,6 +164,7 @@ header{
 .top-description{
     color: var(--color-white);
     max-width: 400px;
+    font-size: 30px;
 }
 
 #button-1-home{
@@ -193,27 +194,27 @@ header{
     background-position: center;
 }
 
-#image-container-1{
+.image-container-1{
     background-image: url(../images/product-image-2-small.jpg);
 }
 
-#image-container-2{
+.image-container-2{
     background-image: url(/images/Product-image-2.jpg);
 }
 
-#image-container-3{
+.image-container-3{
     background-image: url(/images/Product-image-3.jpg);
 }
 
-#image-container-4{
+.image-container-4{
     background-image: url(/images/Product-image-4.jpg);
 }
 
-#image-container-5{
+.image-container-5{
     background-image: url(/images/Product-image-5.jpg);
 }
 
-#image-container-6{
+.image-container-6{
     background-image: url(/images/Product-image-6.jpg);
 }
 
@@ -307,8 +308,9 @@ footer{
 
 .follow-items{
     display: flex;
-    justify-content: space-evenly;
-    margin-left: -40px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: -50px;
 }
 
 footer a{
@@ -414,7 +416,7 @@ footer a{
 #contact-h1{
     margin-right: 400px;
     text-align: center;
-    padding: 80px;
+    padding: 70px;
 }
 
 #contact-info{
@@ -480,6 +482,7 @@ footer a{
     background-color: var(--color-light-blue);
     border-radius: 5px;
     padding: 10px;
+    margin: -10px;
 }
 
 
@@ -559,9 +562,9 @@ input[type='checkbox'] {
     float: right;
 }
 
-#delivery-icon{
+.delivery-icon{
     color: #7A777D;
-    font-size: 40px;
+    font-size: 80px;
     transform: none;
 }
 
@@ -714,6 +717,10 @@ input[type='checkbox'] {
         font-size: var(--font-size-small);
     }
 
+    .follow-items a{
+        font-size: var(--font-size-medium);
+    }
+
     .activities-phone{
         
         clear: both;
@@ -807,6 +814,14 @@ input[type='checkbox'] {
     #specific-container{
         display: block;
     }
+
+    #contact-form{
+        padding: 50px 10px;
+    }
+
+    #company-info{
+        padding: 50px;
+    }
 }
 @media screen and (min-width: 601px) and (max-width: 1100px){
     .profile-images{
@@ -838,7 +853,7 @@ input[type='checkbox'] {
         background-size: cover;
         min-height: 700px;
         display: block;
-        align-content: top center;
+        background-position: top center;
         margin: 70px 40px;
     }
 
