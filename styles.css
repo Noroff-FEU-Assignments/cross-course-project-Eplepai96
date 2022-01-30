@@ -192,6 +192,7 @@ header{
     margin-top: -40px;
     position: relative;
     background-position: center;
+    height: 385px;
 }
 
 .image-container-1{
@@ -218,11 +219,15 @@ header{
     background-image: url(/images/Product-image-6.jpg);
 }
 
-li button{
+.product-category{
+    float: left;
+    padding: 4px 10px;
     margin-top: 260px;
-    margin-bottom: 3px;
-    padding: 5px 10px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255, 0.8);
+    margin: 260px 5px 5px 5px;
+    border-radius: 2px;
 }
 
 .popular-products{
@@ -277,9 +282,7 @@ li button{
 
 /* Activities section */
 
-.index-main .button-1{
-    margin: 40px;
-}
+
 
 .activities{
     display: block;
@@ -294,6 +297,7 @@ li button{
     flex: 50%;
     align-self: center;
     padding-left: 40px;
+    margin: 1px;
 }
 
 
@@ -493,11 +497,6 @@ footer a{
     margin-bottom: 200px;
 }
 
-#checkout-container button{
-    padding: 10px 20px;
-    background-color: #5a99c7;
-}
-
 #sign-in-container, #guest-container{
     background-color: var(--color-light-blue);
     padding: 50px;
@@ -569,6 +568,10 @@ input[type='checkbox'] {
 }
 
 /* Checkout-3 */
+
+.checkout-3-main{
+    overflow: hidden;
+}
 .checkout-h1{
     text-align: center;
 }
@@ -721,13 +724,12 @@ input[type='checkbox'] {
         font-size: var(--font-size-medium);
     }
 
-    .activities-phone{
-        
-        clear: both;
+    nav ul li .item-0, .item-1, .item-1-phone, .item-2, .item-3, .item-4, .item-5{
+        display: none;
     }
 
-   nav ul li .item-0, .item-1, .item-2, .item-3, .item-4, .item-5{
-        display: none;
+    #hamburger-menu:checked ~ .item-1-phone{
+        display: block; 
     }
 
     #hamburger-menu:checked ~ .item-2{
@@ -735,7 +737,7 @@ input[type='checkbox'] {
     }
 
     #hamburger-menu:checked ~ .item-3{
-        display: block;
+        display: none;
     }
 
     #hamburger-menu:checked ~ .item-4{
@@ -774,7 +776,9 @@ input[type='checkbox'] {
         padding: 100px;
     }
 
-    
+    .breadcrumbs{
+        margin-left: -15px;
+    }
 
     /* Footer */
     
@@ -822,6 +826,10 @@ input[type='checkbox'] {
     #company-info{
         padding: 50px;
     }
+
+    #guest-container .button-1{
+        padding: 15px;
+    }
 }
 @media screen and (min-width: 601px) and (max-width: 1100px){
     .profile-images{
@@ -864,7 +872,15 @@ input[type='checkbox'] {
         margin-left: 40px;
     }
 
-    .item-0, .item-5{
+    .item-0, .item-1-phone, .item-5{
         display: none;
+    }
+
+    .index-main .button-1{
+        margin: 40px;
+    }
+
+    #product-summary{
+        width: 400px;
     }
 }
