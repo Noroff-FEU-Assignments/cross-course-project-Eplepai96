@@ -26,7 +26,7 @@ p{
     border-radius: 10px;
     border: rgb(22, 36, 112) solid 1px;
     background-image: linear-gradient(rgb(22, 36, 112), var(--color-blue), rgb(22, 36, 112));
-    max-width: 150px;
+    min-width: 150px;
     color: var(--color-white);
 }
 
@@ -662,6 +662,59 @@ input[type='checkbox'] {
 }
 
 /* Product specific */
+
+
+
+/* .cart-item {
+    position:absolute;
+    height:24px;
+    width:24px;
+}
+
+    .cart-item:before {
+      content: '1';
+      display: block;
+      line-height: 23px;
+      font-size: 16px;
+      font-weight: 600;
+      background:#0b0c5c;
+      color:white;
+      border-radius: 20px;
+      text-align: center;
+
+      animation-name: xAxis;
+      animation-duration: 3s;
+      animation-timing-function: cubic-bezier(1, 0.84, 0.44, 0.1);
+    } 
+    
+
+    #add-to-cart-button:before {
+      content: attr(data-totalitems);
+      font-size: 12px;
+      position: absolute;
+      top: 40px;
+      right: 10px;
+      background:#020452;
+      line-height: 24px;
+      padding: 0 5px;
+      height: 24px;
+      min-width: 15px;
+      color:white;
+      text-align: center;
+      border-radius: 24px;
+    }   
+
+
+    @keyframes xAxis{
+        100% {
+            transform: translateX(calc(50vw- 105px));
+        }
+    }
+     */
+
+
+
+
 .image-specific{
     max-width: 300px;
     max-height: 250px;

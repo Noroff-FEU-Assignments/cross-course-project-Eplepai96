@@ -36,7 +36,7 @@
             <li class="item-3"><a href="about.html">About Us</a></li>
             <li class="item-4"><a href="contact.html">Contact</a></li>
               <input type="checkbox" id="searchicon">
-            <li><span class="material-icons" id="Shopping-bag"><a href="checkout.html">
+            <li><span class="material-icons" id="Shopping-bag" data-totalitems="0"><a href="checkout.html">
               shopping_bag</a>
               </span></li>
           </ul>
@@ -97,7 +97,9 @@
                                 </select>
                             </div>
                             <div class="specific-content">
-                            <a href="" class="button-1">Add to cart</a>
+                            <button class="button-1" id="add-to-cart-button">Add to cart
+                              <span class="cart-item"></span>
+                            </button>
                         </div>
                         </div>
                         <div id="specific-left-bottom">
@@ -432,5 +434,6 @@
           </ul>
         </div>
       </footer>
+      <script src="/Ny mappe/js/specific.js"></script>
 </body>
 </html>
