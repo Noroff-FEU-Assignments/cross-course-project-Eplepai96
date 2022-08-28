@@ -778,6 +778,56 @@ input[type='checkbox'] {
 
 
 
+
+
+/* Items added in cms CA */
+.product {
+    font-size: 30px;
+    font-weight: 800;
+    padding: 20px;
+    background-color: #e7e7e794; 
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: 800;
+    padding: 25px;
+    margin-top: 200px;
+    background-color: #e7e7e794; 
+}
+
+.product-image {
+    background-repeat: no-repeat;
+    min-height: 310px;
+    min-width: 400px;
+    background-position: center;
+}
+
+.product-image-home {
+    background-position: center;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    gap: 5px;
+}
+
+.details-image {
+    display: block;
+    max-height: 100px;
+    min-width: 350px;
+}
+
+.details-description {
+    float: right;
+}
+
+.details-button {
+
+}
+
 /* Media screen */
 @media screen and (max-width:1000px){
     p{
